@@ -1,7 +1,6 @@
 import numpy as np
 
 matrix = np.genfromtxt("input.txt", dtype=int, delimiter=1)
-# matrix cargado como un 2d array de c (puedo acceder a subindices matrix[x][y])
 rows, columns = matrix.shape
 
 
