@@ -10,29 +10,18 @@ relevant_cycles = [20, 60, 100, 140, 180, 220]
 
 
 for line in file:
-
-    print(f"cycle = {cycle}")
-    print(f"register = {register}")
-
-
     if line[0] == "n":
-
         if cycle in relevant_cycles:
-            result += cycle * register
-
+            result += cycle * register         
         cycle += 1
-
-
 
     if line[0] == "a":
         if cycle in relevant_cycles:
             result += cycle * register
-
         cycle += 1
 
         if cycle in relevant_cycles:
             result += cycle * register
-
         cycle += 1
 
         register += int(line[5:])
