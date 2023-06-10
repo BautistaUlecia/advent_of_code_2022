@@ -23,22 +23,16 @@ for line in file:
 
     if line[0] == "n":
         cycle += 1
-        print(crt)
-        print(register)
         if crt[0] == register or crt[0] == register + 1 or crt[0] == register - 1:
             drawing[crt[1], crt[0]] = "#"
         crt = increment_crt(crt)
 
     if line[0] == "a":
         cycle += 1
-        print(crt)
-        print(register)
         if crt[0] == register or crt[0] == register + 1 or crt[0] == register - 1:
             drawing[crt[1], crt[0]] = "#"
         crt = increment_crt(crt)
         cycle += 1
-        print(crt)
-        print(register)
         if crt[0] == register or crt[0] == register + 1 or crt[0] == register - 1:
             drawing[crt[1], crt[0]] = "#"
         crt = increment_crt(crt)
